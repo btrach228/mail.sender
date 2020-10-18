@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form_body">
+          <h1 class="form_title">Contact with me</h1>
+
+          <div class="form_item">
+            <input
+              placeholder="Your name"
+              type="text"
+              id="form_name"
+              name="name"
+              class="form_input _requare"
+            />
+          </div>
+
+          <div class="form_item">
+            <input
+              placeholder="Email:"
+              type="email"
+              id="form_email"
+              name="email"
+              class="form_input _requare _email"
+            />
+          </div>
+          <div class="form_item">
+            <textarea
+              placeholder="Tell about yourself..."
+              name="Message"
+              id="formMessage"
+              class="form_input"
+            ></textarea>
+          </div>
+          <div class="form_item">
+            <div class="form_label">Age:</div>
+            <select name="age" class="select">
+              <option value="18-25">18-25</option>
+              <option value="25-35">25-35</option>
+              <option value="35-50">35-50</option>
+              <option value="50-60">50-60</option>
+              <option value="60-80">60-80</option>
+            </select>
+          </div>
+          <div class="form_item">
+            <div class="form_label">Attach photo:</div>
+            <div class="file">
+              <div class="file_item">
+                <input
+                  id="formImage"
+                  accept=".gif,.png,.jpeg"
+                  type="file"
+                  name="image"
+                  class="file_input"
+                />
+                <div class="file_button">Choose</div>
+              </div>
+              <div id="file_preview" class="file_preview"></div>
+            </div>
+          </div>
+          <div class="checkBox">
+            <input
+              id="form_agreemnt"
+              type="checkbox"
+              name="agreement"
+              class="checkbox_input _requare"
+            />
+            <label for="form_agreemnt" class="checkbox_label"
+              ><span
+                >Я даю своё согласия на обработку персональных данных
+              </span></label
+            >
+          </div>
+          <button type="submit" class="form_button">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
